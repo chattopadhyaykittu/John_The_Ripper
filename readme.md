@@ -36,11 +36,9 @@
 ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/Picture%201.png?raw=true "Title")
 
 
-
 Version 1.9.0-jumbo -1 bleeding
 
-![](media/image3.png){width="6.378788276465442in"
-height="3.7387379702537182in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/1.png?raw=true "Title")
 
 [Source](https://info.varonis.com/hubfs/Imported_Blog_Media/Reasons-To-Use-John-The-Ripper.png?hsLang=en)
 
@@ -55,8 +53,8 @@ plaintext. So, if hackers gain their hands on a database full of hashed
 passwords, decoding them is pointless. However, hackers have other
 options for obtaining the password.
 
-![](media/image4.png){width="5.526042213473316in"
-height="2.6567508748906388in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/2.png?raw=true "Title")
+
 
 [Source](https://www.thesslstore.com/blog/difference-encryption-hashing-salting/)
 
@@ -128,7 +126,7 @@ height="2.6567508748906388in"}
 
 **Modes in John the Ripper**
 
-![](media/image5.png){width="6.3125in" height="2.634323053368329in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/2.png?raw=true "Title")
 
 [Source](https://www.varonis.com/blog/john-the-ripper)
 
@@ -212,7 +210,8 @@ height="2.6567508748906388in"}
 ```
 -   Finally cracking it using Ripper
 
-![](media/image6.png){width="6.5in" height="3.0833333333333335in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/3.png?raw=true "Title")
+
 
 -   a = Add files to archive
 
@@ -223,7 +222,7 @@ height="2.6567508748906388in"}
 -   rar2john text.rar command is used to convert the password into hash
     which john can crack
 
-![](media/image7.png){width="6.5in" height="2.0555555555555554in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/4.png?raw=true "Title")
 
 Finally the password is cracked
 
@@ -245,8 +244,7 @@ Finally the password is cracked
 <!-- -->
 ```
 -   Finally crack it using Ripper
-    ![](media/image8.png){width="5.458333333333333in"
-    height="2.9467027559055117in"}
+   ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/5.png?raw=true "Title")
 
 ```{=html}
 <!-- -->
@@ -275,9 +273,10 @@ Finally the password is cracked
 -   After it is converted into a crackable hash, JtR is used on this
     hash.
 
-![](media/image9.png){width="6.5in" height="4.041666666666667in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/6.png?raw=true "Title")
 
-![](media/image10.png){width="6.5in" height="2.1527777777777777in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/7.png?raw=true "Title")
+
 
 Finally the hash is cracked
 

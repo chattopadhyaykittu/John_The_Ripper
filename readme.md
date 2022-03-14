@@ -33,8 +33,9 @@
 -   It comes pre-installed with Kali Linux and and can be run from the
     terminal as shown below:
 
-![](media/image2.png){width="6.33905949256343in"
-height="3.8817782152230973in"}
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/Picture%201.png?raw=true "Title")
+
+
 
 Version 1.9.0-jumbo -1 bleeding
 

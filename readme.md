@@ -1,6 +1,7 @@
 **John The Ripper**
 
-https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/Screenshot%202022-03-13%20at%2010.46.51%20PM.png
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/Screenshot%202022-03-13%20at%2010.46.51%20PM.png?raw=true "Title")
+
 
 [Source](https://www.legallybreaking.com/discussion/192/john-the-ripper-cracking-offline-passwords)
 

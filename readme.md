@@ -36,7 +36,7 @@
 ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/Picture%201.png?raw=true "Title")
 
 
-Version 1.9.0-jumbo -1 bleeding
+*Version 1.9.0-jumbo -1 bleeding*
 
 ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/1.png?raw=true "Title")
 
@@ -98,7 +98,7 @@ options for obtaining the password.
 > For example: Uppercase alphabets, special characters, and numerals,
 > such as ABC32@\$, should all be included in the string you use to
 > crack passwords.
->
+
 > On a perfect match, the user receives a password, although this
 > efficient process is very slow. In fact, a machine will take almost
 > ten years to guess a 10-character password that contains upper and
@@ -126,7 +126,7 @@ options for obtaining the password.
 
 **Modes in John the Ripper**
 
-![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/2.png?raw=true "Title")
+![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/90.png?raw=true "Title")
 
 [Source](https://www.varonis.com/blog/john-the-ripper)
 
@@ -135,10 +135,8 @@ options for obtaining the password.
     useful when a user creates a password for an account using
     information from the username (e.g. username: username1234).
 
-> **Syntax:** john \[mode/option\] \[password file\]
->
-> john \--single \--format=raw-sha1 crack.txt
->
+- **Syntax:** john [mode option][password file\]
+> john --single --format=raw-sha1 crack.txt 
 > where the mode is single, hash format is RAW-SHA1 and the hash is
 > stored in crack.txt
 
@@ -149,22 +147,19 @@ options for obtaining the password.
     implemented to each and every line in the wordlist file, resulting
     in numerous potential passwords for every source word.
 
-> **Syntax:** john \[wordlist\] \[options\] \[password file\]
->
-> john --wordlist=/usr/share/john/password.lst --format=raw-sha1
-> crack.txt
->
-> **OR**
->
-> john \--wordlist=/usr/share/john/password.lst \--format=raw-sha1
-> crack.txt
->
+- **Syntax:** john [wordlist][options] [password file]
+
+> john --wordlist=/usr/share/john/password.lst --format=raw-sha1 crack.txt
+
+**OR**
+
+> john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha1 crack.txt
+
 > where the wordlist is the mode, password.lst is the text file inside
-> john the ripper containing a directory of passwords, the format is
-> RAW-SHA1 and the hashed file is stored in crack.txt
->
-> rockyou.txt is Kali Linux's own password list, a huge password
-> dictionary
+  john the ripper containing a directory of passwords, the format is
+  RAW-SHA1 and the hashed file is stored in crack.txt
+
+ rockyou.txt is Kali Linux's own password list, a huge password dictionary
 
 3)  **Incremental Mode:** This is the most powerful password cracking
     option; it can examine all potential character combinations. Though,
@@ -174,12 +169,10 @@ options for obtaining the password.
     feasible in a short amount of time, this method handles trigraph
     frequencies separately for each letter position and password length.
 
-> **Syntax:** john \[Incremental:MODE\] \[password file\]
->
-> john \--incremental crack.txt
->
-> where the mode is incremental and crack.txt is the file in which the
-> hash is stored
+> **Syntax:** john [Incremental:MODE] [password file]
+
+> john --incremental crack.txt
+  where the mode is incremental and crack.txt is the file in which the hash is stored
 
 **Useful Link**
 
@@ -193,34 +186,25 @@ options for obtaining the password.
 
 -   **Cracking RAR Password Hash**
 
-```{=html}
-<!-- -->
-```
--   Create a compressed encrypted rar file
+   Create a compressed encrypted rar file
 
--   Creating a hash of the password
+   Creating a hash of the password
 
-```{=html}
-<!-- -->
-```
--   **Syntax**: rar2john \[location of key\]
+  **Syntax**: rar2john \[location of key\]
 
-```{=html}
-<!-- -->
-```
--   Finally cracking it using Ripper
+  Finally cracking it using Ripper
 
 ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/3.png?raw=true "Title")
 
 
--   a = Add files to archive
+>   a = Add files to archive
 
--   hp\[password\] = Encrypt both file data and headers
+> hp\[password\] = Encrypt both file data and headers
 
--   This command will encrypt text.txt into text.rar
+>  This command will encrypt text.txt into text.rar
 
--   rar2john text.rar command is used to convert the password into hash
-    which john can crack
+> rar2john text.rar command is used to convert the password into hash
+  which john can crack
 
 ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/4.png?raw=true "Title")
 
@@ -228,81 +212,66 @@ Finally the password is cracked
 
 -   **Cracking ZIP Password Hash**
 
-```{=html}
-<!-- -->
-```
--   Encrypt a zip file
+ Encrypt a zip file
 
--   Convert the password to hash
+ Convert the password to hash
 
-```{=html}
-<!-- -->
-```
--   **Syntax:** zip2john \[location of key\]
 
-```{=html}
-<!-- -->
-```
--   Finally crack it using Ripper
-   ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/5.png?raw=true "Title")
+>**Syntax:** zip2john [location of key]
 
-```{=html}
-<!-- -->
-```
--   e = Encrypt
 
--   r = Recursive into directories
+ Finally crack it using Ripper
+   
+ - ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/5.png?raw=true "Title")
+
+
+> e = Encrypt
+
+> r = Recursive into directories
 
 -   **Cracking SSH Password Hash**
 
-```{=html}
-<!-- -->
-```
--   To test the cracking of the private key, have to create a set of new
-    private keys using the command **ssh-keygen**
 
--   After running the command, it asks for the location (we can use any
-    location or leave it as default)
+ To test the cracking of the private key, have to create a set of new
+ private keys using the command **ssh-keygen**
 
--   Then it asks for the passphrase and after we enter the password once
-    again, we successfully generate the key.
+ After running the command, it asks for the location (we can use any
+  location or leave it as default)
 
--   In order for john to crack, it's format is changed using the syntax
-    **ssh2john \[location of key\]**
+ Then it asks for the passphrase and after we enter the password once
+  again, we successfully generate the key.
 
--   After it is converted into a crackable hash, JtR is used on this
-    hash.
+ In order for john to crack, it's format is changed using the syntax
+  **ssh2john \[location of key\]**
+
+ After it is converted into a crackable hash, JtR is used on this
+  hash.
 
 ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/6.png?raw=true "Title")
 
 ![Alt text](https://github.com/chattopadhyaykittu/John_The_Ripper/blob/main/7.png?raw=true "Title")
 
 
-Finally the hash is cracked
+> Finally the hash is cracked
 
 **Cracking User Credentials**
 
--   The user's password is stored in a shadow file at the location
-    /etc/shadow, which is a system file where the encrypted user
-    password is stored
+ The user's password is stored in a shadow file at the location
+ **/etc/shadow**, which is a system file where the encrypted user
+ password is stored
 
--   Cracking the credentials of all users
+ Cracking the credentials of all users
 
-```{=html}
-<!-- -->
-```
--   unshadow /etc/passwd /etc/shadow \> crack.txt
+> **unshadow /etc/passwd /etc/shadow \> crack.txt**
 
-```{=html}
-<!-- -->
-```
--   (unshadow command is combining the /etc/passwd and /etc/shadow files
-    for helping john to gather information required to crack the
-    credentials of all users and the hash is stored inside crack.txt)
 
--   john \--wordlist=/usr/share/wordlists/rockyou.txt crack.txt
+> (unshadow command is combining the /etc/passwd and /etc/shadow files
+  for helping john to gather information required to crack the
+  credentials of all users and the hash is stored inside crack.txt)
 
--   After using this command, the credentials will be cracked
+> john \--wordlist=/usr/share/wordlists/rockyou.txt crack.txt
+
+> After using this command, the credentials will be cracked
 
 **Useful Link:**
 
@@ -313,21 +282,21 @@ Finally the hash is cracked
 
 **Competitors**
 
-Hashcat is one of John the Ripper\'s main rivals. It, similar to John
-the Ripper, is a command-line programme that can crack a wide range of
-password types. Hashcat, on the other hand, has greater support for
-cracking passwords utilizing your graphics card. Hashcat is way quicker
-than John the Ripper if you have a strong GPU.
+- Hashcat is one of John the Ripper\'s main rivals. It, similar to John
+ the Ripper, is a command-line programme that can crack a wide range of
+ password types. Hashcat, on the other hand, has greater support for
+ cracking passwords utilizing your graphics card. Hashcat is way quicker
+ than John the Ripper if you have a strong GPU.
 
-There is also a Hash [Suite](https://hashsuite.openwall.net/) which has
-a modern GUI and can crack 13 different hash types.
+ > There is also a Hash [Suite](https://hashsuite.openwall.net/) which has
+   a modern GUI and can crack 13 different hash types.
 
 **Conclusion**
 
-JtR has risen up to be one of the best password cracking tools. It is
-not very beginner-friendly considering it involves numerous steps to run
-it. But it targets sysadmins and regular users and has everything needed
-to crack several hash types.
+- JtR has risen up to be one of the best password cracking tools. It is
+  not very beginner-friendly considering it involves numerous steps to run
+  it. But it targets sysadmins and regular users and has everything needed
+  to crack several hash types.
 
 **References:**
 
